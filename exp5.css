@@ -1,0 +1,43 @@
+h1{
+    color:white;
+    background-color: blue;
+    text-align: center;
+}
+
+.d1{
+    width:50%;
+    float:left;
+}
+.d2{
+    width:50%;
+    float:left;
+}
+
+.d3{
+    width:50%;
+    float:left;
+}
+.d4{
+    width:50%;
+    float:left;
+}
+
+#d{
+    padding-left: 50%;
+    padding-top: 50%;
+}
+#b1{
+    background-color: blue;
+    color:white;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 4px;
+}
+
+#result{
+    color: brown;
+    font-size: 25px;
+    text-align: center;
+    display: block;
+}

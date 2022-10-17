@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="exp5.css">
+  <script>
+    function add() {
+      var a = 0
+      var b = 0
+      var c = 0
+      var d = 0
+      if (document.getElementById('check1').checked == true)
+        a = 150
+      if (document.getElementById('check2').checked == true)
+        b = 80
+      if (document.getElementById('check3').checked == true)
+        c = 50
+      if (document.getElementById('check4').checked == true)
+        d = 100
+      var sum = a + b + c + d
+      document.getElementById('result').innerHTML = "Total Price: " + sum
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Fruit Shopping</h1>
+  <table width="100%">
+    <form>
+      <div>
+        <div class="d1">
+          <img src="https://image.shutterstock.com/image-photo/red-apple-isolated-on-white-260nw-1727544364.jpg">
+          <input id="check1" type="checkbox">
+          <label id="l1">Apple Rs.150</label>
+        </div>
+        <div class="d2">
+          <img src="https://image.shutterstock.com/image-photo/single-banana-isolated-260nw-575528569.jpg">
+          <input id="check2" type="checkbox">
+          <label id="l2">Banana Rs.80</label>
+        </div>
+      </div>
+      <div>
+        <div class="d3">
+          <img src="https://image.shutterstock.com/image-photo/take-close-shot-toy-duck-260nw-1660772134.jpg">
+          <input id="check3" type="checkbox">
+          <label id="l3">Duck Rs.50</label>
+        </div>
+        <div class="d4">
+          <img src="https://image.shutterstock.com/image-photo/cup-coffee-latte-heart-shape-260nw-1568190193.jpg">
+          <input id="check4" type="checkbox">
+          <label id="l4">coffee Rs.100</label>
+        </div>
+      </div>
+      <div id="d">
+        <input type="button" id="b1" value="Buy" onclick="add()"></button>
+      </div>
+      <hr>
+      <br>
+      <div id="result" style="color:red;font-size:25px;"></div>
+      <br>
+      <hr>
+    </form>
+  </table>
+</body>
+</html>
